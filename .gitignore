@@ -1,6 +1,7 @@
 ## Custom
-[Oo]ut/
+[Dd]ependencies/
 [Gg]enerated/
+[Oo]ut/
 
 ## Ignore CMake temporary files, and build results
 ##
