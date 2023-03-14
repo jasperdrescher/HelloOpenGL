@@ -1,2 +1,2 @@
-call "Scripts/InitSubmodules.bat"
+git submodule update --init --recursive
 pause

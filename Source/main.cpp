@@ -1,6 +1,6 @@
 #include "ApplicationDefines.hpp"
 
-#include <glad/glad.h>
+#include <glad/gl.h>
 #include <GLFW/glfw3.h>
 
 int main()
@@ -24,13 +24,9 @@ int main()
 
     glfwMakeContextCurrent(window);
 
-    int version = gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress));
+    int version = gladLoadGL(glfwGetProcAddress);
     if (version == 0)
-    {
-        glfwTerminate();
-
         return EXIT_FAILURE;
-    }
 
     while (!glfwWindowShouldClose(window))
     {
