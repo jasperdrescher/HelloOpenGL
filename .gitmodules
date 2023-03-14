@@ -4,7 +4,3 @@
 [submodule "Submodules/GLFW"]
 	path = Submodules/GLFW
 	url = https://github.com/glfw/glfw.git
-[submodule "Submodules/GLAD"]
-	path = Submodules/GLAD
-	url = https://github.com/Dav1dde/glad.git
-	branch = master
