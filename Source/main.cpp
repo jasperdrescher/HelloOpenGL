@@ -26,7 +26,11 @@ int main()
 
     int version = gladLoadGL(glfwGetProcAddress);
     if (version == 0)
+    {
+        glfwTerminate();
+
         return EXIT_FAILURE;
+    }
 
     while (!glfwWindowShouldClose(window))
     {
