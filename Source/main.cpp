@@ -3,6 +3,8 @@
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 
+#include <cstdio>
+
 int main()
 {
     if (!glfwInit())
@@ -24,13 +26,15 @@ int main()
 
     glfwMakeContextCurrent(window);
 
-    int version = gladLoadGL(glfwGetProcAddress);
+    const int version = gladLoadGL(glfwGetProcAddress);
     if (version == 0)
     {
         glfwTerminate();
 
         return EXIT_FAILURE;
     }
+
+    printf("OpenGL version: %i", version);
 
     while (!glfwWindowShouldClose(window))
     {
